@@ -1099,9 +1099,11 @@ body.nav-opened .menu-button .word {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: fit-content;
-    max-width: fit-content; 
-    margin: 1rem 5% 1rem 5%;
+    display: inline;
+    max-width: 360px;
+    text-align:center;
+    max-width: fit-content;
+    margin: 1rem 1rem 1rem 1rem;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
@@ -1132,9 +1134,6 @@ body:not(.post-template) .post-title {
     font-size: 3.6rem;
 }
 
-.post-title a {
-    text-decoration: none;
-}
 
 .post-excerpt p {
     margin: 0;
@@ -1848,6 +1847,8 @@ body:not(.post-template) .post-title {
 
     .post {
         width: auto;
+        max-width: 360px;
+        height: fit-content;
         margin-top: 2rem;
         margin-bottom: 2rem;
         margin-left: 16px;
